@@ -150,3 +150,6 @@ media/
 
 # Others
 node_modules
+
+# Игнорировать файл docker-compose.yml
+docker-compose.yml
