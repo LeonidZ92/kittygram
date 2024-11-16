@@ -1,5 +1,5 @@
 Бейджик успешного Workflow:
-![Workflow Status](https://github.com/leonidz92/kittygram_final/.github/workflows/main.yml/badge.svg)
+![Workflow Status](https://github.com/leonidz92/kittygram_final/actions/workflows/main.yml/badge.svg)
 
 Описание проекта
 
