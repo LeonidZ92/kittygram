@@ -1,15 +1,16 @@
 ![Workflow Status](https://github.com/leonidz92/kittygram_final/actions/workflows/main.yml/badge.svg)
 
-Описание проекта
+**Описание проекта**
 
 Kittygram - это веб-приложение для обмена фотографиями и достижениями о домашних животных. Проект позволяет пользователям создавать учетные записи, загружать фотографии своих питомцев, добавлять достижения.
 
-Функционал:
+**Функционал:**
 
 Регистрация и аутентификация пользователей.
 Загрузка и просмотр фотографий котов.
 Выбор достижений ваших питомцев.
-Стек технологий:
+
+**Стек технологий:**
 
 Backend: Python, Django, Django REST Framework.
 Frontend: React, Redux.
@@ -19,7 +20,7 @@ CI/CD: GitHub Actions.
 Тестирование: Pytest.
 Как развернуть проект
 
-Клонируйте репозиторий:
+**Клонируйте репозиторий:**
 
 git clone https://github.com/leonidz92/kittygram.git
 
@@ -35,26 +36,11 @@ python -m venv venv source venv/bin/activate # Для Linux/macOS venv\Scripts\a
 
 pip install -r backend/requirements.txt
 
-Заполните файл .env с необходимыми переменными окружения. Пример:
-
-SECRET_KEY=your_secret_key DEBUG=True DB_NAME=your_db_name DB_USER=your_db_user DB_PASSWORD=your_db_password DB_HOST=db_host DB_PORT=db_port
-
-Запустите проект локально:
-
-python manage.py migrate python manage.py runserver
-
-Развертывание проекта в Docker
-
-Заполните файл .env с необходимыми переменными окружения.
-
-Соберите и запустите контейнеры:
-
-docker-compose up --build
-
-Как заполнить env
+**Заполните файл .env с необходимыми переменными окружения. Пример:**
 
 Создайте файл .env в корневой директории проекта и заполните его следующим образом:
 
+```
 POSTGRES_DB=kittygram 
 POSTGRES_USER=kittygram_user 
 POSTGRES_PASSWORD=kittygram_password 
@@ -65,6 +51,23 @@ DB_PORT=5432
 SECRET_KEY='your_secret_key'
 DEBUG=True 
 ALLOWED_HOSTS=localhost,127.0.0.1
+```
+
+**Запустите проект локально:**
+
+```
+python manage.py migrate python manage.py runserver
+```
+
+Развертывание проекта в Docker
+
+Заполните файл .env с необходимыми переменными окружения.
+
+Соберите и запустите контейнеры:
+
+```
+docker-compose up --build
+```
 
 **Автор**
 
